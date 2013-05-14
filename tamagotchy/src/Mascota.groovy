@@ -20,6 +20,7 @@ public class Mascota {
 		}
 	
 	def poneteContenta(){
+		println "me puse contenta";
 		estado = new Contenta(); 
 	}
 	
