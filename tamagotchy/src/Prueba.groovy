@@ -5,8 +5,13 @@ public class Prueba {
 	//EL main es como nuestro workspace en paradigmas, aca llamamos a todo
 	public static void main(String[] args) {
 
+//Defino la hora del sistema para el cual la mascota comenzo a aburrirse		
+		def s = new Date();
+		def m= s.minutes;
+		def h = s.hours;
+		
 //Prueba para la mascota con 70 de felicidad y arranca en estado contento	
-def leo = new Mascota(70,new Aburrida())
+def leo = new Mascota(70,new Aburrida(m, h))
 
 println "Empezamos a interactuar con la mascota"
 

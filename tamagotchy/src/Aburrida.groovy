@@ -1,20 +1,19 @@
 
 public class Aburrida extends Stado {
-    
-	/*
-    def m= s.minutes;
-	def h = s.hours;*/
+  	
+	def m;
+	def h;
 	
 	//el objeto s ahora entiende para pedirle hora, minuto, blabla del sistema
 	def s = new Date();
-	
-	// tiro unos minutos y hora arbitrario solo para probar. Como figuraria en un reloj seria
-	//8:54
-	def m=54;
-	def h=8;
-	
-	def come(mascota){
 		
+	public Aburrida(Object m, Object h) {
+		super();
+		this.m = m;
+		this.h = h;
+	}
+
+	def come(mascota){	
 	
 	//de 13:54 a 15:00 hay 66 minutos de diferencia
 	//Si haces (15*60) - (13*60+54) = 66 Es lo que implemente
@@ -23,6 +22,7 @@ public class Aburrida extends Stado {
 	// si los minutos de aburrimiento son mayores a 80
 		
 	if ( (this.minutosTotalTiempoActual() - this.minutosTotalInicioDeAburrimiento())>80 ){
+		println "entre";
 		mascota.poneteContenta();
 		}
 	}
@@ -44,6 +44,7 @@ public class Aburrida extends Stado {
 	// uso s que entiende los mensajes minutes y hours 
 		def mActual = s.minutes;
 		def hActual = s.hours;
+		
 		
 	//obtengo minutos totales
 		def tActual = hActual*60 + mActual;
