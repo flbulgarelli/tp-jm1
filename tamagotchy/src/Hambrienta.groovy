@@ -5,12 +5,12 @@ public class Hambrienta extends Stado {
 		mascota.poneteContenta();
 	}
 	
-	def juega(mascota){
+	def juga(mascota){
 		
 	}
 	
 	def podesJugar(){
-		println "false";
+		return false;
 	}
 	
 	

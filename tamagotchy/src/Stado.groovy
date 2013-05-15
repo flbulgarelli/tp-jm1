@@ -2,8 +2,6 @@
 public class Stado  {
 
 	def podesJugar(){
-		println "true";
+		return true;
 	}
-	
-	
 }

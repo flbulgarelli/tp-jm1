@@ -2,39 +2,31 @@
 public class Mascota {
 
 	def nivelFelicidad;
-    def estado;
-	
+	def estado;
+
 	public Mascota(Object nivelContenta, Object estado) {
 		super();
 		this.nivelFelicidad = nivelContenta;
 		this.estado = estado;
 	}
-	
+
 	def come() {
 		estado.come(this);
-		
 	}
-	
+
 	def incrementaNivelFelicidad(incremento){
 		nivelFelicidad=nivelFelicidad+incremento;
-		}
-	
-	def poneteContenta(){
-		println "me puse contenta";
-		estado = new Contenta(); 
 	}
-	
+
+	def poneteContenta(){
+		estado = new Contenta();
+	}
+
 	def juga(){
 		estado.juga(this);
 	}
-	
+
 	def podesJugar(){
- return (estado.podesJugar());
+		return (estado.podesJugar());
 	}
-	
-	//Se antepone el $ para mostrar lo que hay dentro de la variable
-	def mostrar(){
-		println "Mi nivel de felicidad es: $nivelFelicidad";
-	}
-	
 }
