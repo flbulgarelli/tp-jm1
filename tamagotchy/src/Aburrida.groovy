@@ -3,10 +3,8 @@ public class Aburrida extends Stado {
 
 	def m;
 	def h;
-
-	//el objeto s ahora entiende para pedirle hora, minuto, blabla del sistema
-	def s = new Date();
-
+	def tiempoActual = new Date();
+	
 	public Aburrida(Object m, Object h) {
 		super();
 		this.m = m;
@@ -41,8 +39,8 @@ public class Aburrida extends Stado {
 
 		//obtengo la hora y minutos del sistema
 		// uso s que entiende los mensajes minutes y hours
-		def mActual = s.minutes;
-		def hActual = s.hours;
+		def mActual = tiempoActual.minutes;
+		def hActual = tiempoActual.hours;
 
 
 		//obtengo minutos totales
