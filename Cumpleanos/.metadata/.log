@@ -1,0 +1,228 @@
+!SESSION 2013-05-21 21:28:02.593 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 2 2013-05-21 21:33:40.625
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2013-05-21 21:33:51.390 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-05-21 21:41:26.640
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2013-05-21 21:41:26.640
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2013-05-21 21:41:26.640
+!MESSAGE "Xtend SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.640
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE Software being installed: Xtend SDK 2.4.1.v201304180855 (org.eclipse.xtend.sdk.feature.group 2.4.1.v201304180855)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE Software currently installed: Xtext SDK 2.4.0.v201303201134 (org.eclipse.xtext.sdk.feature.group 2.4.0.v201303201134)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.640
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE Common Types Shared State 2.4.0.v201303201134 (org.eclipse.xtext.common.types.shared 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE Common Types Shared State 2.3.0.v201206120633 (org.eclipse.xtext.common.types.shared 2.3.0.v201206120633)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE Common Types Shared State 2.3.1.v201208210947 (org.eclipse.xtext.common.types.shared 2.3.1.v201208210947)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE Common Types Shared State 2.4.1.v201304180855 (org.eclipse.xtext.common.types.shared 2.4.1.v201304180855)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.640
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE From: Xtend SDK 2.4.1.v201304180855 (org.eclipse.xtend.sdk.feature.group 2.4.1.v201304180855)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE To: org.eclipse.xtext.ui.feature.group [2.4.1.v201304180855]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.640
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE From: Xtext SDK 2.4.0.v201303201134 (org.eclipse.xtext.sdk.feature.group 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE To: org.eclipse.xtext.ui.feature.group [2.4.0.v201303201134]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.640
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE From: Xtext UI 2.4.0.v201303201134 (org.eclipse.xtext.ui.feature.group 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE To: org.eclipse.xtext.common.types.shared [2.4.0.v201303201134]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.640
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE From: Xtext UI 2.4.1.v201304180855 (org.eclipse.xtext.ui.feature.group 2.4.1.v201304180855)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.640
+!MESSAGE To: org.eclipse.xtext.common.types.shared [2.4.1.v201304180855]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-05-21 21:41:26.671
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2013-05-21 21:41:26.671
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2013-05-21 21:41:26.671
+!MESSAGE "Xtend SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.671
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE Software being installed: Xtend SDK 2.4.1.v201304180855 (org.eclipse.xtend.sdk.feature.group 2.4.1.v201304180855)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE Software currently installed: Xtext SDK 2.4.0.v201303201134 (org.eclipse.xtext.sdk.feature.group 2.4.0.v201303201134)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.671
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE Common Types Shared State 2.4.0.v201303201134 (org.eclipse.xtext.common.types.shared 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE Common Types Shared State 2.3.0.v201206120633 (org.eclipse.xtext.common.types.shared 2.3.0.v201206120633)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE Common Types Shared State 2.3.1.v201208210947 (org.eclipse.xtext.common.types.shared 2.3.1.v201208210947)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE Common Types Shared State 2.4.1.v201304180855 (org.eclipse.xtext.common.types.shared 2.4.1.v201304180855)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.671
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE From: Xtend SDK 2.4.1.v201304180855 (org.eclipse.xtend.sdk.feature.group 2.4.1.v201304180855)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE To: org.eclipse.xtext.ui.feature.group [2.4.1.v201304180855]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.671
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE From: Xtext SDK 2.4.0.v201303201134 (org.eclipse.xtext.sdk.feature.group 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE To: org.eclipse.xtext.ui.feature.group [2.4.0.v201303201134]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.671
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE From: Xtext UI 2.4.0.v201303201134 (org.eclipse.xtext.ui.feature.group 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE To: org.eclipse.xtext.common.types.shared [2.4.0.v201303201134]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:26.671
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE From: Xtext UI 2.4.1.v201304180855 (org.eclipse.xtext.ui.feature.group 2.4.1.v201304180855)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:26.671
+!MESSAGE To: org.eclipse.xtext.common.types.shared [2.4.1.v201304180855]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-05-21 21:41:52.234
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2013-05-21 21:41:52.234
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2013-05-21 21:41:52.234
+!MESSAGE "Xtext SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.234
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE Software being installed: Xtext SDK 2.4.1.v201304180855 (org.eclipse.xtext.sdk.feature.group 2.4.1.v201304180855)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE Software currently installed: Xtend SDK 2.4.0.v201303201134 (org.eclipse.xtend.sdk.feature.group 2.4.0.v201303201134)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.234
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE Common Types Shared State 2.4.0.v201303201134 (org.eclipse.xtext.common.types.shared 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE Common Types Shared State 2.3.0.v201206120633 (org.eclipse.xtext.common.types.shared 2.3.0.v201206120633)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE Common Types Shared State 2.3.1.v201208210947 (org.eclipse.xtext.common.types.shared 2.3.1.v201208210947)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE Common Types Shared State 2.4.1.v201304180855 (org.eclipse.xtext.common.types.shared 2.4.1.v201304180855)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.234
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE From: Xtend SDK 2.4.0.v201303201134 (org.eclipse.xtend.sdk.feature.group 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE To: org.eclipse.xtext.ui.feature.group [2.4.0.v201303201134]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.234
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE From: Xtext SDK 2.4.1.v201304180855 (org.eclipse.xtext.sdk.feature.group 2.4.1.v201304180855)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE To: org.eclipse.xtext.ui.feature.group [2.4.1.v201304180855]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.234
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE From: Xtext UI 2.4.0.v201303201134 (org.eclipse.xtext.ui.feature.group 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE To: org.eclipse.xtext.common.types.shared [2.4.0.v201303201134]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.234
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE From: Xtext UI 2.4.1.v201304180855 (org.eclipse.xtext.ui.feature.group 2.4.1.v201304180855)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.234
+!MESSAGE To: org.eclipse.xtext.common.types.shared [2.4.1.v201304180855]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-05-21 21:41:52.250
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2013-05-21 21:41:52.250
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2013-05-21 21:41:52.250
+!MESSAGE "Xtext SDK" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.250
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE Software being installed: Xtext SDK 2.4.1.v201304180855 (org.eclipse.xtext.sdk.feature.group 2.4.1.v201304180855)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE Software currently installed: Xtend SDK 2.4.0.v201303201134 (org.eclipse.xtend.sdk.feature.group 2.4.0.v201303201134)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.250
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE Common Types Shared State 2.4.0.v201303201134 (org.eclipse.xtext.common.types.shared 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE Common Types Shared State 2.3.0.v201206120633 (org.eclipse.xtext.common.types.shared 2.3.0.v201206120633)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE Common Types Shared State 2.3.1.v201208210947 (org.eclipse.xtext.common.types.shared 2.3.1.v201208210947)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE Common Types Shared State 2.4.1.v201304180855 (org.eclipse.xtext.common.types.shared 2.4.1.v201304180855)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.250
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE From: Xtend SDK 2.4.0.v201303201134 (org.eclipse.xtend.sdk.feature.group 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE To: org.eclipse.xtext.ui.feature.group [2.4.0.v201303201134]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.250
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE From: Xtext SDK 2.4.1.v201304180855 (org.eclipse.xtext.sdk.feature.group 2.4.1.v201304180855)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE To: org.eclipse.xtext.ui.feature.group [2.4.1.v201304180855]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.250
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE From: Xtext UI 2.4.0.v201303201134 (org.eclipse.xtext.ui.feature.group 2.4.0.v201303201134)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE To: org.eclipse.xtext.common.types.shared [2.4.0.v201303201134]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2013-05-21 21:41:52.250
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.250
+!MESSAGE From: Xtext UI 2.4.1.v201304180855 (org.eclipse.xtext.ui.feature.group 2.4.1.v201304180855)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2013-05-21 21:41:52.265
+!MESSAGE To: org.eclipse.xtext.common.types.shared [2.4.1.v201304180855]
+
+!ENTRY org.apache.log4j 4 0 2013-05-21 21:43:09.515
+!MESSAGE org.uqbarproject.pseudo.ui.PseudoExecutableExtensionFactory  - com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.wizard.IProjectCreator was bound.
+  while locating org.eclipse.xtext.ui.wizard.IProjectCreator
+    for parameter 0 at org.uqbarproject.pseudo.ui.wizard.PseudoNewProjectWizard.<init>(Unknown Source)
+  while locating org.uqbarproject.pseudo.ui.wizard.PseudoNewProjectWizard
+
+1 error
+
+
+!ENTRY org.apache.log4j 4 0 2013-05-21 21:43:34.187
+!MESSAGE org.uqbarproject.pseudo.ui.PseudoExecutableExtensionFactory  - com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.wizard.IProjectCreator was bound.
+  while locating org.eclipse.xtext.ui.wizard.IProjectCreator
+    for parameter 0 at org.uqbarproject.pseudo.ui.wizard.PseudoNewProjectWizard.<init>(Unknown Source)
+  while locating org.uqbarproject.pseudo.ui.wizard.PseudoNewProjectWizard
+
+1 error
+
+
+!ENTRY org.eclipse.ui 2 2 2013-05-21 21:47:41.156
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
