@@ -1,0 +1,5 @@
+
+interface Espectaculo {
+
+	int getCosto();
+}
