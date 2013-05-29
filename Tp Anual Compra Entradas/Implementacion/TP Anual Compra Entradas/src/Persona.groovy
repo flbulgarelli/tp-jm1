@@ -21,7 +21,7 @@ class Persona {
 			sing=SingletonID.getInstance()			
 			codigo=sing.id;
 			entrada.id(codigo);
-			sing.sumarId();
+			sing.incrementarId();
 		}//fin if
 		else {
 			println "Imposible realizar la compra.";

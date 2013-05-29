@@ -10,7 +10,7 @@ class SingletonID {
 	public static SingletonID getInstance() {
 		return INSTANCE;
 	}
-	def sumarId(){
+	def incrementarId(){
 		this.id++;
 	}
 	def private id(codigo){
