@@ -1,4 +1,4 @@
-
+@Singleton
 class SingletonID {
 
 	def int id;

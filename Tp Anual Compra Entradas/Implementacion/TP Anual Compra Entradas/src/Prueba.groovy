@@ -20,7 +20,7 @@ class Prueba {
 		def entrada6 = new Entrada(espectaculo3, fila1Sector4);
 		
 		
-		def mayor= new Mayor();
+		def mayor= new Tipo();
 		def jubilada= new Jubilado();
 		def menor= new MenorEdad();
 				
