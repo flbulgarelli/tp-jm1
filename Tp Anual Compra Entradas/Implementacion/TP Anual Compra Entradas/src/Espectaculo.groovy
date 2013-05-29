@@ -1,5 +1,11 @@
 
-interface Espectaculo {
-
-	int getCosto();
+class Espectaculo {
+  
+  def fecha;
+	def bandas;
+  
+	def fecha(fecha) {
+		this.fecha=fecha;
+	}
+	
 }

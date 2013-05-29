@@ -1,10 +1,6 @@
-class Categoria3 implements Espectaculo{
+class Categoria3 extends Espectaculo{
 	
-	def fecha;
 	
-	def fecha(fecha) {
-		this.fecha=fecha;
-	}
 	def int getCosto(){
 		return 100;
 	}
