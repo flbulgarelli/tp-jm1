@@ -1,7 +1,8 @@
 package solucion1
-class ProductoCompuesto implements Producto
+class ProductoCompuesto extends Producto
 {
 	def Componente[] componentes  
+	def boolean esProductoFinal
 	public ProductoCompuesto(stockActual, stockMinimo, stockMaximo, puntoPedido, nombre, esProductoFinal, componentes, observadores)
 	{
 		this.componentes = componentes

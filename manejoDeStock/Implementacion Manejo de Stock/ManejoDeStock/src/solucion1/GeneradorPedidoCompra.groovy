@@ -1,7 +1,6 @@
 package solucion1
 
-class Logger implements Observador {
-
+class GeneradorPedidoCompra implements Observador{
 
 	@Override
 	public Object notificacionStockMenorAlMinimo() {

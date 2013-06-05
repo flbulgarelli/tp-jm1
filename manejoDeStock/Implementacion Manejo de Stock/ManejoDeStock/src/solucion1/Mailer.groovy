@@ -14,4 +14,16 @@ class Mailer implements Observador {
 		return null;
 	}
 
+	@Override
+	public Object notificacionSuperoStockMinimo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object notificacionUnidades(Object unidades) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -24,4 +24,9 @@ class Fabrica
 			
 	}
 	
+	def comprar(Producto producto, int unidades)
+	{
+		producto.actualizarStock(unidades)	
+	}
+	
 }
