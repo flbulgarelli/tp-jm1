@@ -1,4 +1,3 @@
-
 #producto
 
 atributo nombre:String
@@ -15,7 +14,7 @@ atributo codigoNotificacion
 
 >>aFabricar(stock)
 componentes=stock.buscarMisComponentes(self)
-cuando (tamaño componentes) es igual a cero entonces
+cuando (tamaï¿½o componentes) es igual a cero entonces
  tirar error
  otro caso
 stock.validarComponentes(componentes,self).
@@ -27,7 +26,7 @@ atributo productos:Producto (lista de productos)
 
 filtrar los productos de la lista "productos"  que coincidan con el "producto.nombre"
 esta lista asignarla a otra que se llama listaAuxiliar
-cuando ( (tamaño (listaAuxiliar) ) es igual a 0 ) entonces
+cuando ( (tamaï¿½o (listaAuxiliar) ) es igual a 0 ) entonces
 producto.aFabricar(producto)
 otro caso
 agarrar el primero de la lista  listaAuxiliar 
@@ -35,14 +34,16 @@ borra ese de la lista de productos
 this.notificar(producto)
 
 >>notificar(producto)
-cuando el tamaño de filtrar la lista de stock segun el producto que saque da menor a la cantidad minima
+cuando el tamaï¿½o de filtrar la lista de stock segun el producto que saque da menor a la cantidad minima
    si codigoNotificacion es igual a 0
          no hace nada
    si codigoNotificacion es igual a 1 
-      notificarACompras(producto)
+      this.notificarACompras(producto)
    si codigoNotificacion es igual a 2
-      notificarAEnviarMail 
-
+      this.notificarEnviarMail()
+   si codigoNotificacion es igual a 3
+      this.notificarElLog(producto,"Abajo del Minimo")
+      
 >>validarComponentes(componentes,producto)
 
    componentesFaltantes 
@@ -55,16 +56,33 @@ cuando el tamaño de filtrar la lista de stock segun el producto que saque da men
 >>buscarMiscomponentes(producto)
 filrar los elementos de la lista de stock que son componentes de mi producto, osea cuando producto.nombre coincide con el componente.esComponentede 
 
->>ingresaMercarderias(mercaderia,cantidad)
+>>ingresarProducto(producto,cantidad)
 
 averiguar stock del producto que entro y asignarselo a "total"
 
-total es igual a tamaño mas la cantidad
+total es igual a tamaï¿½o mas la cantidad
 
-si total mayor a mercaderia.cantMinima etnonces
-     notificarElLog
-si total  mayor mercaderia.cantMaxima entonces
-    notificarExcesoDeStock
+si total mayor a producto.cantMinima entonces
+     this.notificarElLog(producto,"Supera Minimo")
+si total  mayor producto.cantMaxima entonces
+    this.notificarExcesoDeStock
+
+>>notificarACompras(producto)
+se registra el producto.nombre y el producto.puntoPedido
+se genera pedido de compra
+
+>>notificarEnviarMail()
+armar y mandar un mail de notificacion
+
+>>notificarElLog(producto,alerta)
+crear log y asignarle fecha y producto 
+
+si alerta es Abajo del minimo entonces
+asigno a descripcion una string de alerta
+
+si alerta es Supera Minimo entonces
+asigno a descripcion una string de descripcion
+
 
 #Fabrica >>reservar(producto)
 stock.sacarelprimeroqueencuentre(producto);
