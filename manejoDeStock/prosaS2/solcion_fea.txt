@@ -1,0 +1,73 @@
+
+#producto
+
+atributo nombre:String
+atributo esFinal:bool
+atributo esComponente:bool
+atributo esComponentede:String
+atributo cantComponentes:int
+atributo nombreDesusComponentes:String
+atributo cantMinima
+atributo cantMaxima
+atributo puntoPedido
+atributo codigoNotificacion
+
+
+>>aFabricar(stock)
+componentes=stock.buscarMisComponentes(self)
+cuando (tamaño componentes) es igual a cero entonces
+ tirar error
+ otro caso
+stock.validarComponentes(componentes,self).
+
+Clase Stock
+atributo productos:Producto (lista de productos) 
+
+>>sacarelprimeroqueencuentre(producto)
+
+filtrar los productos de la lista "productos"  que coincidan con el "producto.nombre"
+esta lista asignarla a otra que se llama listaAuxiliar
+cuando ( (tamaño (listaAuxiliar) ) es igual a 0 ) entonces
+producto.aFabricar(producto)
+otro caso
+agarrar el primero de la lista  listaAuxiliar 
+borra ese de la lista de productos    
+this.notificar(producto)
+
+>>notificar(producto)
+cuando el tamaño de filtrar la lista de stock segun el producto que saque da menor a la cantidad minima
+   si codigoNotificacion es igual a 0
+         no hace nada
+   si codigoNotificacion es igual a 1 
+      notificarACompras(producto)
+   si codigoNotificacion es igual a 2
+      notificarAEnviarMail 
+
+>>validarComponentes(componentes,producto)
+
+   componentesFaltantes 
+       igual a trae los que estan en la segunda y no en la primera, y saca los que estan demas de la primera( componentes , producto.nombreDesusComponentes)
+   para cada elemento de la lista fijarse si esComponente igual a true y cantComponentes igual a cero(listaFiltrada->producto)
+       De ser asi: mostrar error
+       De no ser asi: stock.sacarleElPrimeroQueEncuentre(producto)
+
+
+>>buscarMiscomponentes(producto)
+filrar los elementos de la lista de stock que son componentes de mi producto, osea cuando producto.nombre coincide con el componente.esComponentede 
+
+>>ingresaMercarderias(mercaderia,cantidad)
+
+averiguar stock del producto que entro y asignarselo a "total"
+
+total es igual a tamaño mas la cantidad
+
+si total mayor a mercaderia.cantMinima etnonces
+     notificarElLog
+si total  mayor mercaderia.cantMaxima entonces
+    notificarExcesoDeStock
+
+#Fabrica >>reservar(producto)
+stock.sacarelprimeroqueencuentre(producto);
+
+
+
