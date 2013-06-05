@@ -1,4 +1,4 @@
-#producto
+Clase producto
 
 atributo nombre:String
 atributo esFinal:bool
@@ -84,7 +84,11 @@ si alerta es Supera Minimo entonces
 asigno a descripcion una string de descripcion
 
 
-#Fabrica >>reservar(producto)
+Clase Fabrica 
+
+atributo stock: stock
+
+>>reservar(producto)
 stock.sacarelprimeroqueencuentre(producto);
 
 
