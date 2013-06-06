@@ -11,9 +11,5 @@ class MateriaPrima extends Producto {
 		this.puntoPedido=puntoPedido
 		this.nombre=nombre
 	}
-	
-
-	
-	
 
 }

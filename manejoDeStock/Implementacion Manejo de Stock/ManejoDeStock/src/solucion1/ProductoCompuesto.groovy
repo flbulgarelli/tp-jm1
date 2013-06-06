@@ -1,10 +1,8 @@
 package solucion1
-class ProductoCompuesto extends Producto
-{
-	def Componente[] componentes  
+class ProductoCompuesto extends Producto {
+	def Componente[] componentes
 	def boolean esProductoFinal
-	public ProductoCompuesto(stockActual, stockMinimo, stockMaximo, puntoPedido, nombre, esProductoFinal, componentes, observadores)
-	{
+	public ProductoCompuesto(stockActual, stockMinimo, stockMaximo, puntoPedido, nombre, esProductoFinal, componentes, observadores) {
 		this.componentes = componentes
 		this.observadores = observadores
 		this.stockActual=stockActual
@@ -15,74 +13,47 @@ class ProductoCompuesto extends Producto
 		this.esProductoFinal=esProductoFinal //Se agrega este flag porque puede haber productos compuestos no finales y, por ahora, sólo queremos vender finales
 	}
 
-	def agregarComponente(Componente componente)
-	{
+	def agregarComponente(Componente componente) {
 		this.componentes << componente
 	}
 
-@Override
-	public boolean sePuedeReservar() 
-	{
-		if(! esProductoFinal)
-		{
+	@Override
+	public boolean sePuedeReservar() {
+		if(! esProductoFinal) {
 			return false
 		}
-		
-		if(this.hayStock())
-		{
-			return true 
-		}  
-		if(this.sePuedeFabricar())
-		{
+
+		if(this.hayStock()) {
+			return true
+		}
+		if(this.sePuedeFabricar()) {
 			this.fabricate()
 			return true
 		}
-		else
-		{
+		else {
 			return false
 		}
 	}
 
-	
-	def boolean sePuedeFabricar()
-	{
+
+	def boolean sePuedeFabricar() {
 		return componentes.every { it.alcanzanLasUnidades()}
 	}
-	
-	def hayStock()
-	{
+
+	def hayStock() {
 		return stockActual>0
 	}
 
 
 	@Override
-	public boolean esProductoFinal() 
-	{
+	public boolean esProductoFinal() {
 		return esProductoFinal;
 	}
 
+	def fabricate() {
 
-	@Override
-	public Object actualizarStock(int unidades) 
-	{
-		stockActual= stockActual + unidades
-		
-		if(stockActual < stockMinimo)
-		{
-			observadores.each{ it.notificacionStockMenorAlMinimo()}
-		}
-		if(stockActual > stockMaximo)
-		{
-			observadores.each{ it.notificacionStockMayorAlMaximo()}
-		}
-	}
-
-	def fabricate()
-	{
-		
 		componentes.each{ it.elemento.actualizarStock(-it.cantidad) }
 		this.actualizarStock(1)
 	}
-	  
 }
 
