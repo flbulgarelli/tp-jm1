@@ -2,10 +2,12 @@
 class Espectaculo {
   
   def fecha;
-	def bandas;
+  def bandas;
   
-	def fecha(fecha) {
-		this.fecha=fecha;
+	public Espectaculo(fecha, bandas)
+	{
+		this.fecha = fecha
+		this.bandas = bandas
 	}
-	
+		
 }

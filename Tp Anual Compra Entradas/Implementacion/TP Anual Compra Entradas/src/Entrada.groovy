@@ -6,9 +6,9 @@ class Entrada {
 	def fecha = new Date();
 
 	public Entrada(espectaculo,ubicacion) {
-		super();
-		this.espectaculo=espectaculo;
-		this.ubicacion=ubicacion;
+		
+		this.espectaculo=espectaculo
+		this.ubicacion=ubicacion
 	}
 	
 	def getCosto(tipo) {

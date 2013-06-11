@@ -11,20 +11,17 @@ class Persona {
 		this.entradas= [];
 	}
 	
-	def compraEntrada(entrada) {
+	def boolean compraEntrada(entrada) {
 		def int codigo;
 		def sing;
-		if ((saldo >= entrada.getCosto(tipo))&& (entrada.ubicacion.disponible())) {
+		if ((saldo >= entrada.getCosto(tipo))) {
 			saldo = saldo - entrada.getCosto(tipo);
 			entradas.add(entrada);
-			entrada.ubicacion.actDispon();
-			sing=SingletonID.getInstance()			
-			codigo=sing.id;
-			entrada.id(codigo);
-			sing.incrementarId();
+			return true;
 		}//fin if
 		else {
 			println "Imposible realizar la compra.";
+			return false;
 		}//fin else
 	}
 }
