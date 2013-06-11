@@ -2,8 +2,5 @@ package solucion1
 
 interface Observador {
 
-	def notificacionStockMenorAlMinimo()
-	def notificacionStockMayorAlMaximo()
-	def notificacionSuperoStockMinimo()
-	def notificacionUnidades(unidades)
+	def notificarseDeCambioDeStock(stockActual, stockMinimo, stockMaximo, puntoPedido, unidades, nombre)
 }

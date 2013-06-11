@@ -1,28 +1,21 @@
 package solucion1
 
-class GeneradorPedidoCompra implements Observador{
-
-	@Override
-	public Object notificacionStockMenorAlMinimo() {
-		// TODO Auto-generated method stub
-		return null;
+class GeneradorPedidoCompra implements Observador
+{
+	def pedidos
+	
+	public GeneradorPedidoCompra(){
+		this.pedidos = []
 	}
-
+	
 	@Override
-	public Object notificacionStockMayorAlMaximo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Object notificacionSuperoStockMinimo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Object notificacionUnidades(Object unidades) {
-		// TODO Auto-generated method stub
+	public Object notificarseDeCambioDeStock(Object stockActual, Object stockMinimo, Object stockMaximo, Object puntoPedido, Object unidades, Object nombre) 
+	{
+		if(stockActual < stockMinimo)
+		{
+			pedidos.add(new PedidoCompra(nombre, puntoPedido))
+		
+		}
 		return null;
 	}
 

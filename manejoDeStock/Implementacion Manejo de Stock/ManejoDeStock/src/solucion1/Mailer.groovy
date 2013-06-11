@@ -1,29 +1,27 @@
 package solucion1
 
 class Mailer implements Observador {
-
-	@Override
-	public Object notificacionStockMenorAlMinimo() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	def destinatario
+	
+	public Mailer (destinatario){
+		this.destinatario = destinatario
 	}
 
 	@Override
-	public Object notificacionStockMayorAlMaximo() {
+	public Object notificarseDeCambioDeStock(Object stockActual,
+			Object stockMinimo, Object stockMaximo, Object puntoPedido,
+			Object unidades, Object nombre) {
 		// TODO Auto-generated method stub
-		return null;
+		
+			this.enviarMail(nombre)
+	}
+	
+	void enviarMail(nombre){
+		def mensaje = "el stock actual de $nombre es menor al minimo establecido"
+		destinatario.recibir(mensaje)
+		
 	}
 
-	@Override
-	public Object notificacionSuperoStockMinimo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Object notificacionUnidades(Object unidades) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 }

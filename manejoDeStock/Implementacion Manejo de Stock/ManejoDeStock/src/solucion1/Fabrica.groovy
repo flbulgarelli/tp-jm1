@@ -1,32 +1,24 @@
 package solucion1
 
-class Fabrica 
-{
+class Fabrica {
 
 	def mensajeError
-	
-	
-	public Fabrica(mensajeError)
-	{
+
+
+	public Fabrica(mensajeError) {
 		this.mensajeError = mensajeError
 	}
-	
-	def reservar(Producto producto)
-	{
-		if(producto.sePuedeReservar())  
-		{
+
+	def reservar(Producto producto) {
+		if(producto.sePuedeReservar()) {
 			producto.actualizarStock(-1)
 		}
-		else
-		{
+		else {
 			println mensajeError
-		}	
-			
+		}
 	}
-	
-	def comprar(Producto producto, int unidades)
-	{
-		producto.actualizarStock(unidades)	
+
+	def comprar(Producto producto, int unidades) {
+		producto.actualizarStock(unidades)
 	}
-	
 }
