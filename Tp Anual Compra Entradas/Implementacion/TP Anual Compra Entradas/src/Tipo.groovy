@@ -1,8 +1,7 @@
-
 class Tipo {
 	
 	double getDescuento(double precio){
-		return 0;
+		return 0
 	} 
 
 }
