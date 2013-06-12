@@ -11,7 +11,7 @@ class SingletonID {
 		return INSTANCE 
 	}
 	public def incrementarId(){
-		this.id++; 
+		this.id++ 
 	}
 	def private id(codigo){
 		this.id=codigo 
