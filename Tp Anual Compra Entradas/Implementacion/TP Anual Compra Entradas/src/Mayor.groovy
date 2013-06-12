@@ -1,7 +1,6 @@
-
 class Mayor extends Tipo{
 	
 	def double getDescuento(double valorEntradaBase) {
-		return 0;
-	};
+		return 0
+	}
 }
