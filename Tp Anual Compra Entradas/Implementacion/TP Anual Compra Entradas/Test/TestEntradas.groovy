@@ -6,7 +6,7 @@ class TestEntradas extends GroovyTestCase {
 	
 		 
 	void testComprarEntradaMayor() {
-		def sing = SingletonID.getInstance()
+	    def sing = SingletonID.getInstance()
 		sing.id(1)
 		
 		def campus= new Local()
@@ -14,12 +14,12 @@ class TestEntradas extends GroovyTestCase {
 		def espectaculo1 = new Categoria1(18122012, [])
 		campus.agregarEspectaculo(espectaculo1)
 		campus.agregarUbicacion(fila1Sector4)
-		def mayor= new Mayor();
+		def mayor= new Mayor()
 		
 		def jonhy = new Persona(mayor,1000)
 		campus.venderEntrada(1, 4, 18122012, jonhy) 
 
-		assertTrue(jonhy.getSaldo()==750)
+		assertEquals(jonhy.getSaldo(),750,0)
 		assertEquals(jonhy.entradas.size(),1)
 		assertEquals(campus.entradasVendidas.size(),1)
 		assertEquals(sing.getId(),2)
@@ -27,8 +27,9 @@ class TestEntradas extends GroovyTestCase {
 	}
 		
 	void testComprarEntradaJubilado(){
-		def sing=SingletonID.getInstance();
-		def jubilada= new Jubilado();
+		def sing = SingletonID.getInstance()
+		sing.id(1)
+		def jubilada= new Jubilado()
 		
 		def medrano= new Local()
 		def fila5Sector3= new Ubicacion(20,100,5,3)
@@ -44,7 +45,7 @@ class TestEntradas extends GroovyTestCase {
 		
 		assertEquals(caro.entradas.size(),2)
 		assertEquals(medrano.entradasVendidas.size(),2)
-		assertEquals(sing.getId(),4)
+		assertEquals(sing.getId(),3)
 		
 	}
 	
@@ -89,6 +90,7 @@ class TestEntradas extends GroovyTestCase {
 	
 	void testComprarMixto(){
 		def sing= SingletonID.getInstance()
+		sing.id(20)
 		def mayor= new Mayor()
 		
 		def campus= new Local()
@@ -124,7 +126,7 @@ class TestEntradas extends GroovyTestCase {
 		assertEquals(leo.entradas.size(),6)
 		assertTrue(leo.getSaldo()<5000)
 		assertEquals(campus.entradasVendidas.size(),6)
-		assertEquals(sing.getId(),13)
+		assertEquals(sing.getId(),26)
 		
 		
 	}
