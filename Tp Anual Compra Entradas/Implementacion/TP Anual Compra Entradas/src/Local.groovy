@@ -1,11 +1,14 @@
 
 class Local {
 	
-	def ubicaciones = []
-	def espectaculos = []
-	def entradasVendidas = []
+	def List ubicaciones = [] 
+	def List espectaculos =[]
+	def List entradasVendidas =[] 
 	
-	def venderEntrada(fila, sector, fecha, persona)
+	def Local(){
+	}
+	
+	def venderEntrada(fila, sector, fecha, Persona persona)
 	{
 		def Entrada entrada
 		def Ubicacion ubicacion
@@ -17,18 +20,17 @@ class Local {
 		if(ubicacion.disponible())
 		{
 			
-			entrada = new Entrada(ubicacion,espectaculo)
+			entrada = new Entrada(espectaculo,ubicacion,fecha)
 			
-			sing=SingletonID.getInstance()
-			codigo=sing.id
-			entrada.id(codigo)
+			def sing=SingletonID.getInstance()
+			entrada.id(sing.id)
 			
 			if(persona.comprarEntrada(entrada))
 			{
 				sing.incrementarId()
 				ubicacion.actDispon()
 				
-				entradasVendidas << entrada
+				this.entradasVendidas.add(entrada)
 			}
 		}
 		else
@@ -40,12 +42,17 @@ class Local {
 	
 	def Ubicacion traerUbicacion(fila,sector)
 	{
-		this.ubicaciones.find { it.fila == fila && it.sector == sector }
+		this.ubicaciones.find {  it.fila == fila && it.sector == sector }
 	}
 	def Espectaculo traerEspectaculo(fecha)
 	{
-		this.Espectaculos.find { it.fecha == fecha }
+		this.espectaculos.find { it.fecha == fecha }
 	}
 
-	
+	def agregarEspectaculo(espec){
+		espectaculos.add(espec)
+	}	
+	def agregarUbicacion(ub){
+		ubicaciones.add(ub)
+	}
 }

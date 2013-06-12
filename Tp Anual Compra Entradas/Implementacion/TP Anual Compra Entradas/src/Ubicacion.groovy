@@ -1,32 +1,34 @@
 class Ubicacion {
-	def int disponibilidad;
-	def double costo;
+	def int disponibilidad 
+	def double costo 
 	def fila
 	def sector
 	
 	public Ubicacion(Object disponibilidad,Object costo, fila, sector) {
-		super();
-		this.disponibilidad = disponibilidad;
-		this.costo= costo;
+		super() 
+		this.disponibilidad = disponibilidad 
+		this.costo= costo 
 		this.fila = fila
 		this.sector = sector
 		
 	}
 	
 	def getCosto() {
-		return costo;
+		return costo 
 	}
 	def disponible() {
 		if (disponibilidad>0){
-		return true;
+		return true 
 		}//fin if
 		else { 
-			return false;
+			return false 
 		}//fin else
 	}
 	def actDispon() {
 		if (this.disponible()) {
-		disponibilidad--;
+		disponibilidad-- 
 		}//fin if
 	}
+	
+	
 }

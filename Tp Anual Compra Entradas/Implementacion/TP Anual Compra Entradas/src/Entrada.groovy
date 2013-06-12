@@ -3,15 +3,16 @@ class Entrada {
 	def espectaculo;
 	def Ubicacion ubicacion;
 	def id;
-	def fecha = new Date();
+	def fecha 
 
-	public Entrada(espectaculo,ubicacion) {
+	public Entrada(espectaculo,ubicacion,fecha) {
 		
 		this.espectaculo=espectaculo
 		this.ubicacion=ubicacion
+		this.fecha=fecha
 	}
 	
-	def getCosto(tipo) {
+	def getCosto(Tipo tipo) {
 		def costo;
 		costo = espectaculo.getCosto()+ ubicacion.getCosto() - tipo.getDescuento(ubicacion.getCosto());
 		

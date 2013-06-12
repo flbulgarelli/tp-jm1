@@ -1,7 +1,12 @@
 class Categoria1 extends Espectaculo {
 	
-	
-	def int getCosto(){
-		return 0;
+	public Categoria1(fecha, bandas)
+	{
+		this.fecha = fecha
+		this.bandas = bandas
 	}
+	def int getCosto(){
+		return 0
+	}
+	
 }
