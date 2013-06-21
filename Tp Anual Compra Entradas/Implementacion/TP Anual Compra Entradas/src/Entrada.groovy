@@ -13,18 +13,7 @@ class Entrada {
 	}
 	
 	def getCosto(Tipo tipo) {
-		def costo;
-		costo = espectaculo.getCosto()+ ubicacion.getCosto() - tipo.getDescuento(ubicacion.getCosto());
-		
-		/* if((espectaculo.fecha-fecha)>1mes) {
-		 * return costo*0.9;
-		 * }
-		 * else {
-		 * return costo;
-		 * }
-		 */
-		
-		costo;	
+		espectaculo.getCosto()+ ubicacion.getCosto() - tipo.getDescuento(ubicacion.getCosto())
 	}
 
 	def id(codigo){
