@@ -6,7 +6,10 @@ class TestEntradas extends GroovyTestCase {
 	
 		 
 	void testComprarEntradaMayor() {
-	    def sing = SingletonID.instance
+		//FIXME la inicialización del ID es necesaria para todos los tests,
+		//y se está repitiendo por tanto en la mayoría de ellos. Esto debería ser llevado 
+		//a un método setup general (ver @Before)
+	    def sing = SingletonID.instance 
 		sing.id = 1
 		
 		def campus= new Local()
