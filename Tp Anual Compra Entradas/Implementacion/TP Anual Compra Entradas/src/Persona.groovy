@@ -17,10 +17,8 @@ class Persona {
 			saldo = saldo - entrada.getCosto(tipo) 
 			entradas.add(entrada) 
 			true 
-		}//fin if
-		else {
-			println "Imposible realizar la compra." 
+		} else {
 			false 
-		}//fin else
+		}
 	}
 }

@@ -35,6 +35,10 @@ class Local {
 		}
 		else
 		{
+			//FIXME Esto está mal, no sólo están escribiendo por consola
+			//lo cual es una resposabilidad de la UI y no del dominio, sino que además
+			//en este punto esta información se está perdiendo y el sistema no da ningun feedback 
+			//acerca de que no hubo disponibilidad!!
 			println "No hay disponibilidad"
 		}
 		
