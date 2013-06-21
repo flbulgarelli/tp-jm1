@@ -6,7 +6,7 @@ class TestEntradas extends GroovyTestCase {
 	
 		 
 	void testComprarEntradaMayor() {
-	    def sing = SingletonID.getInstance()
+	    def sing = SingletonID.instance
 		sing.id(1)
 		
 		def campus= new Local()
@@ -27,7 +27,7 @@ class TestEntradas extends GroovyTestCase {
 	}
 		
 	void testComprarEntradaJubilado(){
-		def sing = SingletonID.getInstance()
+		def sing = SingletonID.instance
 		sing.id(1)
 		def jubilada= new Jubilado()
 		
@@ -89,7 +89,7 @@ class TestEntradas extends GroovyTestCase {
 	}
 	
 	void testComprarMixto(){
-		def sing= SingletonID.getInstance()
+		def sing= SingletonID.instance
 		sing.id(20)
 		def mayor= new Mayor()
 		

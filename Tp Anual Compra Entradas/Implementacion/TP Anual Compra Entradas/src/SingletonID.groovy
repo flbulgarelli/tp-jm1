@@ -1,15 +1,8 @@
 @Singleton
 class SingletonID {
 
-	def int id 
-	private static SingletonID INSTANCE = new SingletonID() 
-	
-	private SingletonID(){
-		}
-	
-	public static SingletonID getInstance() {
-		return INSTANCE 
-	}
+	def int id
+	 
 	public def incrementarId(){
 		this.id++ 
 	}

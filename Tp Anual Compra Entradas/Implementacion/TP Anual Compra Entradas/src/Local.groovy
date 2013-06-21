@@ -22,7 +22,7 @@ class Local {
 			
 			entrada = new Entrada(espectaculo,ubicacion,fecha)
 			
-			def sing=SingletonID.getInstance()
+			def sing=SingletonID.instance
 			entrada.id(sing.id)
 			
 			if(persona.comprarEntrada(entrada))
