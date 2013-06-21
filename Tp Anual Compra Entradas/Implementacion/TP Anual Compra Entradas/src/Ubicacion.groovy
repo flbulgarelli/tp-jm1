@@ -14,12 +14,7 @@ class Ubicacion {
 	}
 	
 	def disponible() {
-		if (disponibilidad>0){
-			true 
-		}//fin if
-		else { 
-			false 
-		}//fin else
+		disponibilidad>0
 	}
 	def actDispon() {
 		if (this.disponible()) {

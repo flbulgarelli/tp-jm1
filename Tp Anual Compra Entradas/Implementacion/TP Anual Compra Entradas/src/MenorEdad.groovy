@@ -1,10 +1,6 @@
 
 class MenorEdad extends Tipo {
 	
-	public MenorEdad() {
-	super() 
-	}
-	
 	def double getDescuento(double valorEntradaBase) {
 		if (valorEntradaBase > 100) {
 			valorEntradaBase*0.2 

@@ -5,9 +5,6 @@ class Local {
 	def List espectaculos =[]
 	def List entradasVendidas =[] 
 	
-	def Local(){
-	}
-	
 	def venderEntrada(fila, sector, fecha, Persona persona)
 	{
 		def Entrada entrada

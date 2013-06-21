@@ -11,8 +11,6 @@ class Persona {
 	}
 	
 	def boolean comprarEntrada(Entrada entrada) {
-		def int codigo 
-		def sing 
 		if ((saldo >= entrada.getCosto(tipo))) {
 			saldo = saldo - entrada.getCosto(tipo) 
 			entradas.add(entrada) 
