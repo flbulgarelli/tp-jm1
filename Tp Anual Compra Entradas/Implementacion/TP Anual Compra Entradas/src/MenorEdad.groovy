@@ -7,13 +7,11 @@ class MenorEdad extends Tipo {
 	
 	def double getDescuento(double valorEntradaBase) {
 		if (valorEntradaBase > 100) {
-			return valorEntradaBase*0.2 
-		}//fin if
-		if ((valorEntradaBase >50) && (valorEntradaBase <=100)) {
-			return 10 
-		}//fin if
-		else {
-			return 0 
-		}//fin else
+			valorEntradaBase*0.2 
+		} else if ((valorEntradaBase >50) && (valorEntradaBase <=100)) {
+			10 
+		} else {
+			0 
+		}
 	} 
 }

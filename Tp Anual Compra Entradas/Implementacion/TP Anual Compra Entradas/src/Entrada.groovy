@@ -24,7 +24,7 @@ class Entrada {
 		 * }
 		 */
 		
-		return costo;	
+		costo;	
 	}
 
 	def id(codigo){

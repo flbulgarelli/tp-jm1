@@ -6,7 +6,7 @@ class Categoria1 extends Espectaculo {
 		this.bandas = bandas
 	}
 	def int getCosto(){
-		return 0
+		0
 	}
 	
 }

@@ -16,11 +16,11 @@ class Persona {
 		if ((saldo >= entrada.getCosto(tipo))) {
 			saldo = saldo - entrada.getCosto(tipo) 
 			entradas.add(entrada) 
-			return true 
+			true 
 		}//fin if
 		else {
 			println "Imposible realizar la compra." 
-			return false 
+			false 
 		}//fin else
 	}
 }

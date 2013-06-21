@@ -13,15 +13,12 @@ class Ubicacion {
 		
 	}
 	
-	def getCosto() {
-		return costo 
-	}
 	def disponible() {
 		if (disponibilidad>0){
-		return true 
+			true 
 		}//fin if
 		else { 
-			return false 
+			false 
 		}//fin else
 	}
 	def actDispon() {
