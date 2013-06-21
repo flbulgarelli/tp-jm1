@@ -15,8 +15,4 @@ class Entrada {
 	def getCosto(Tipo tipo) {
 		espectaculo.getCosto()+ ubicacion.getCosto() - tipo.getDescuento(ubicacion.getCosto())
 	}
-
-	def id(codigo){
-		this.id=codigo;
-	}	
 }

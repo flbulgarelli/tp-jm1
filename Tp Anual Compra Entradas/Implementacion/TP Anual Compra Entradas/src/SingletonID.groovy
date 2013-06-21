@@ -6,8 +6,4 @@ class SingletonID {
 	public def incrementarId(){
 		this.id++ 
 	}
-	def private id(codigo){
-		this.id=codigo 
-	}
-	
 }
