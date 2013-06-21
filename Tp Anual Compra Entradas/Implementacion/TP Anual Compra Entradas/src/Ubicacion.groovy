@@ -16,6 +16,7 @@ class Ubicacion {
 	def disponible() {
 		disponibilidad>0
 	}
+	//FIXME expresividad. No usar acrónimos, afecta a la mantenibilidad del sistema 
 	def actDispon() {
 		if (this.disponible()) {
 		disponibilidad-- 
